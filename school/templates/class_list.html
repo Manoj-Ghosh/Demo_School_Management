@@ -1,0 +1,15 @@
+<!-- school/templates/student_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Details</title>
+</head>
+<body>
+    <h1>Class Details</h1>
+    <ul>
+        {% for class in classes %}
+            <li>{{ class.class_name }} ----  {{ student.teacher }} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

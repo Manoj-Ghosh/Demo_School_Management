@@ -1,0 +1,15 @@
+<!-- school/templates/student_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.first_name }} {{ student.last_name }} - {{ student.class_assigned.class_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
